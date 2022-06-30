@@ -128,7 +128,7 @@ Below is a diagram of the solution architecture you will build in this lab. Plea
 
 2. If you are not a Service Administrator or Co-administrator for the Azure subscription, or if you are running the lab in a hosted environment, you will need to install [Visual Studio 2019 Community](https://visualstudio.microsoft.com/downloads/) with the **ASP.NET and web development** and **Azure development** workloads.
 
-3. Follow all the steps provided in [Before the Hands-on Lab](Before%20the%20HOL%20-%20Big%20data%20analytics%20and%20visualization.md).
+3. Follow all the steps provided in [Before the Challenge](before-challenge.md).
 ## Exercise 1: Retrieve lab environment information and create Databricks cluster
 
 Duration: 10 minutes
