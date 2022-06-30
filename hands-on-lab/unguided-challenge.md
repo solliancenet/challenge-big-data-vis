@@ -121,12 +121,15 @@ Expected configuration:
 #### Tasks to complete
 
 -   Create a Databricks cluster with the required configuration
+-   Create an Access Token
+-   Import the sample notebooks 
+-   Mount or configure access to remote storage
 
 #### Exit criteria 
 
--   Exit Criteria 1
+    - create and document an accesss token (for use later)  
 
--   Exit Criteria 1
+    - Import sample notebooks from: https://github.com/microsoft/MCW-Big-data-analytics-and-visualization/blob/main/Hands-on%20lab/lab-files/BigDataVis.dbc?raw=true
 
 ## Exercise 2: Load Sample Data and Databricks Notebooks
 
@@ -147,10 +150,14 @@ In this exercise, you will implement a classification experiment. You will load 
    - AirportCodeLocationLookupClean.csv
 
 #### Tasks to complete
-
--   
+    - Load Sample Data From Storage (Local or remote) by creating external tables
 
 #### Exit criteria 
+  - the following external tables exist
+    -   flight_delays_with_airport_codes
+    -   airport_code_location_lookup_clean
+    -   flight_weather_with_airport_code
+
 
 -   You are able to access the database and tables in Azure SQL Database via SSMS.
 
@@ -158,12 +165,17 @@ In this exercise, you will implement a classification experiment. You will load 
 
 #### Tasks to complete
 
--   Task 1
+ - Run through each activity in the notebook where needed complete missing code or resolve any errors that occur
+    -   01 Data Preparation
+    -   02 Train and Evaluate Models
+    -   03 Deploy as Web Service
 
 #### Exit criteria 
 
--   Exit Criteria 1
--   
+ - Data Preparation 
+ - train and Evaluate model
+ - Deploy Model as Web Service
+
 ## Exercise 3: Setup Azure Data Factory
 
 Duration: 20 minutes
@@ -185,7 +197,9 @@ In this exercise, you will create a baseline environment for Azure Data Factory 
 
 #### Tasks to complete
 
--   Task 1
+-   Provision Azure Data Factory
+-   Connect to Azure DevOps / Github for Source Control Integration
+-   install and Configure Self-hosted integration runtime on On-Premises VM
 
 #### Exit criteria 
 
@@ -210,11 +224,14 @@ In this exercise, you will create an Azure Data Factory pipeline to copy data (.
 
 #### Tasks to complete
 
--   Task 1
+-  Copy Flight Delay Data from parquet file to ADLS gen2 storage
+-  Copy Airport code data from On-premises SQL server to ADLS gen2 storage  
+-  Copy Flights and weather data from On-premises Server to ADLS gen2 Storage
 
 #### Exit criteria 
 
--   Exit Criteria 1
+-   The flight Delay data exists in ADLS Gen2 as a parquet file
+-   The airport code data exists in ADLS Gen2 Storage as a parquet file
 
 
 ## Exercise 5: Operationalize ML scoring with Azure Databricks and Data Factory
@@ -237,6 +254,16 @@ In this exercise, you will extend the Data Factory to operationalize data scorin
 Duration: 10 minutes
 
 In this exercise, you will prepare a summary of flight delay data using Spark SQL.
+
+
+#### Tasks to complete
+-   Create Azure Databricks Linked Service
+
+#### Exit criteria 
+
+-   Exit Criteria 1
+
+
 
 ## Exercise 7: Visualizing in Power BI Desktop
 
