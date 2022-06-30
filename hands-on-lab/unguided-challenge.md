@@ -17,7 +17,7 @@
     - [Abstract and learning objectives](#abstract-and-learning-objectives)
     - [Overview](#overview)
     - [Solution architecture](#solution-architecture)
-    - [Requirements](#requirements)
+    - [Excercise 0: Setup](#setup)
     - [Exercise 1: Retrieve lab environment information and create Databricks cluster](#exercise-1-retireve-lab-environment-information-and-create-databricks-cluster)
         - [Task 1: Provision a SQL Server](#task-1-provision-a-sql-server)
             - [Tasks to complete](#tasks-to-complete)
@@ -120,7 +120,7 @@ Below is a diagram of the solution architecture you will build in this lab. Plea
 
 ![The high-level overview diagram of the end-to-end solution is displayed. Flight delay data and historical airport weather data are provided to Azure Data Factory. Azure Data Factory provides this data to both blob storage and Azure Databricks. Azure Databricks scores the data and saves the results to a local table. Azure Databricks also creates, trains, and exports a machine learning model to the Azure Machine Learning Service. Azure Machine Learning service provides a containerized services that is consumed by the web portal. The web portal also consumes 3rd party API data for forecasted weather. Map data visualization is provided by Power BI using web portal information and the Azure Databricks table.](media/high-level-overview.png 'High-level overview diagram')
 
-## Requirements
+## Excercise 0: Setup
 
 1. Microsoft Azure subscription must be pay-as-you-go or MSDN.
 
