@@ -21,25 +21,53 @@
         - [Task 1: Complete Before The Challenge](before-challenge.md)
     - [Exercise 1: Retrieve lab environment information and create Databricks cluster](#exercise-1-retireve-lab-environment-information-and-create-databricks-cluster)
         - [Task 1: Retrieve Azure Storage account information and Subscription Id](#task-1-retrieve-azure-storage-account-information-and-subscription-id)
+            - [Tasks to complete](#tasks-to-complete)
+            - [Exit criteria](#exit-criteria)
         - [Task 2: Create an Azure Databricks cluster](#task-2-create-an-azure-databricks-cluster)
+            - [Tasks to complete](#tasks-to-complete-1)
+            - [Exit criteria](#exit-criteria-1)
     - [Exercise 2: Load Sample Data and Databricks Notebooks](#exercise-2-load-sample-data-and-databricks-notebooks)
         - [Task 1: Upload the Sample Datasets](#task-1-upload-the-sample-datasets)
+            - [Tasks to complete](#tasks-to-complete-2)
+            - [Exit criteria](#exit-criteria-2)
         - [Task 2: Open Azure Databricks and complete lab notebooks](#task-2-open-azure-databricks-and-complete-lab-notebooks)
+            - [Tasks to complete](#tasks-to-complete-3)
+            - [Exit criteria](#exit-criteria-3)
     - [Exercise 3: Setup Azure Data Factory](#exercise-3-setup-azure-data-factory)
         - [Task 1: Download and stage data to be processed](#task-1-download-and-stage-data-to-be-processed)
+            - [Tasks to complete](#tasks-to-complete-3)
+            - [Exit criteria](#exit-criteria-3)
         - [Task 2: Install and configure Azure Data Factory Integration Runtime on your machine](#task-2-install-and-configure-azure-data-factory-integration-runtime-on-your-machine)
+            - [Tasks to complete](#tasks-to-complete-3)
+            - [Exit criteria](#exit-criteria-3)
         - [Task 3: Configure Azure Data Factory](#task-3-configure-azure-data-factory)
+            - [Tasks to complete](#tasks-to-complete-3)
+            - [Exit criteria](#exit-criteria-3)
     - [Exercise 4: Develop a data factory pipeline for data movement](#exercise-4-develop-a-data-factory-pipeline-for-data-movement)
          - [Task 1: Create copy pipeline using the Copy Data Wizard](#task-1-create-copy-pipeline-using-the-copy-data-wizard)
+            - [Tasks to complete](#tasks-to-complete-3)
+            - [Exit criteria](#exit-criteria-3)
     - [Exercise 5: Operationalize ML scoring with Azure Databricks and Data Factory](#exercise-5-operationalize-ml-scoring-with-azure-databricks-and-datafactory)
         - [Task 1: Create Azure Databricks Linked Service](#task-1-create-azure-databricks-linked-service)
+            - [Tasks to complete](#tasks-to-complete-3)
+            - [Exit criteria](#exit-criteria-3)
         - [Task 2: Trigger workflow](#task-2-trigger-workflow)
+            - [Tasks to complete](#tasks-to-complete-3)
+            - [Exit criteria](#exit-criteria-3)
     - [Exercise 6: Summarize data using Azure Databricks](#exercise-6-summarize-data-using-azure-databricks)
         - [Task 1: Summarize delays by airport](#task-1-summarize-delays-by-airport)
+            - [Tasks to complete](#tasks-to-complete-3)
+            - [Exit criteria](#exit-criteria-3)
     - [Exercise 7: Visualizing in Power BI Desktop](#exercise-7-visualizing-in-powwer-bi)
         - [Task 1: Obtain the JDBC connection string to your Azure Databricks cluster](#task-1-obtain-the-jdbc-connection-string-to-your-azure-databricks-cluster)
+            - [Tasks to complete](#tasks-to-complete-3)
+            - [Exit criteria](#exit-criteria-3)
         - [Task 2: Connect to Azure Databricks using Power BI Desktop](#task-2-connect-to-azure-databricks-using-power-bi-desktop)
+            - [Tasks to complete](#tasks-to-complete-3)
+            - [Exit criteria](#exit-criteria-3)
         - [Task 3: Create Power BI report](#task-3-create-power-bi-report)
+            - [Tasks to complete](#tasks-to-complete-3)
+            - [Exit criteria](#exit-criteria-3)
     - [Exercise 8: Deploy intelligent web app (Optional)I](#exercise-8-deploy-intelligent-web-app-optional)
         - [Task 1: Register for an OpenWeather account](#task-1-register-for-an-openweather-account)
         - [Task 2: Deploy web app from GitHub](#task-2-deploy-web-app-from-github)
@@ -95,6 +123,9 @@ this can be done via the portal, Azure CLI ior PowerShell
 #### Exit criteria 
 
 -   You have the necessary storage account information
+
+##### Hints, Tips, and Resources
+TBD
 
 ### Task 2: Create an Azure Databricks cluster
 
@@ -271,12 +302,63 @@ Duration: 20 minutes
 
 In this exercise, you will create visualizations in Power BI Desktop.
 
+### Task 1: Obtain the JDBC connection string to your Azure Databricks cluster
+Before you begin, you must first obtain the JDBC connection string to your Azure Databricks cluster.
+
+the JDBC Connection string is available from the cluster configuration you will need the Server Hostname and the HTTP Path (this information will be used to create a connection from Power BI Desktop)
+
+### Task 2: Connect to Azure Databricks using Power BI Desktop
+Create a conenction from Power BI Desktop to Azure Databricks
+
+
+### Task 3: Create Power BI report
+
+Create a power BI Report with 3 visualizations:
+
+- Map visualization with Number of delays By Orgin (Lat, Long)
+- Tree Map visualization With Number of Delays by Origin Airport Code
+- Stacked Column Chart Visualization showing Number of Delays by Day of month
+
+Here is a sample of the finished report:
+
+![Sample Completed  Power BI Report](media/pbi-desktop-full-report.png 'Sample Completed  Power BI Report')
+
+##### Hints, Tips, and Resources
+- Feel Free to experiment with or create alternate visulizations
+- All visualizations should be linked and provide cross filter functionality
+
+
 ## Exercise 8: Deploy intelligent web app (Optional)
+Duration: 20 minutes
+
+In this exercise, you will deploy an intelligent web application to Azure from GitHub. This application leverages the operationalized machine learning model deployed in Exercise 1 to bring action-oriented insight into an already existing business process.
 
 #### Tasks to complete
 
--   Create Azure Databricks Linked Service
+### Task 2: Deploy web app from GitHub
+Follow the instructions here to deploy the app:
+
+https://github.com/Microsoft/MCW-Big-data-analytics-and-visualization/blob/main/Hands-on%20lab/lab-files/BigDataTravel/README.md 
+
+you will need to provide the following values:
+
+- Subscription / Resource Group
+- Region
+- ML Url (from the Azure Databricks notebook #3 in excercise 2 folder)
+- Weather API Key
+
+### Task 3: Navigate to the web app and verify functionality
+
+try a few different combinations of origin, destination, date, and time in the application. The information you are shown is the result of both the ML API you published, as well as information retrieved from the OpenWeather API.
+
 
 #### Exit criteria 
 
--   Exit Criteria 1
+    - The web app is deployed and functional
+
+##### Hints, Tips, and Resources
+
+- if the automated deployment from the link fails you may need to download the code and manually deploy from Visual studio
+
+## Conclusion
+Congratulations! You have built and deployed an intelligent system to Azure. We started by deploying resources to azure. we created a data movement pipeline.we then did some data prepartion and created a Machine learning model. while the datasets and model choices will be different for each use case the overall process and tools will be common across solutions and problem domains.
