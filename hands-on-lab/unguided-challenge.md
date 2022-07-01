@@ -103,6 +103,7 @@ Below is a diagram of the solution architecture you will build in this lab. Plea
 2. If you are not a Service Administrator or Co-administrator for the Azure subscription, or if you are running the lab in a hosted environment, you will need to install [Visual Studio 2019 Community](https://visualstudio.microsoft.com/downloads/) with the **ASP.NET and web development** and **Azure development** workloads.
 
 3. Follow all the steps provided in [Before the Challenge](before-challenge.md).
+
 ## Exercise 1: Retrieve lab environment information and create Databricks cluster
 
 Duration: 10 minutes
@@ -117,21 +118,20 @@ You will need to have the Azure Storage account name and access key when you cre
 
 -   Retrieve Strorage Account Name, Access Keys
 
-Hints / tips:
-this can be done via the portal, Azure CLI ior PowerShell
-
 #### Exit criteria 
 
 -   You have the necessary storage account information
 
 ##### Hints, Tips, and Resources
-TBD
+
+-   this can be done via the portal, Azure CLI ior PowerShell
 
 ### Task 2: Create an Azure Databricks cluster
 
 You have provisioned an Azure Databricks workspace, and now you need to create a new cluster within the workspace. Part of the cluster configuration includes setting up an account access key to your Azure Storage account using the Spark Config within the new cluster form. This will allow your cluster to access the lab files.
 
 Expected configuration:
+   
    - **Cluster Name**: `lab`
 
    - **Cluster Mode**: **Standard**
@@ -158,9 +158,8 @@ Expected configuration:
 
 #### Exit criteria 
 
-    - create and document an accesss token (for use later)  
-
-    - Import sample notebooks from: https://github.com/microsoft/MCW-Big-data-analytics-and-visualization/blob/main/Hands-on%20lab/lab-files/BigDataVis.dbc?raw=true
+-   create and document an accesss token (for use later)  
+-   Import sample notebooks from: https://github.com/microsoft/MCW-Big-data-analytics-and-visualization/blob/main/Hands-on%20lab/lab-files/BigDataVis.dbc?raw=true
 
 ## Exercise 2: Load Sample Data and Databricks Notebooks
 
@@ -184,13 +183,12 @@ In this exercise, you will implement a classification experiment. You will load 
     - Load Sample Data From Storage (Local or remote) by creating external tables
 
 #### Exit criteria 
-  - the following external tables exist
+
+-   the following external tables exist
     -   flight_delays_with_airport_codes
     -   airport_code_location_lookup_clean
     -   flight_weather_with_airport_code
-
-
--   You are able to access the database and tables in Azure SQL Database via SSMS.
+-   You are able to access the tables in Azure Databricks via SSMS.
 
 ### Task 2: Open Azure Databricks and complete lab notebooks
 
@@ -274,10 +272,18 @@ In this exercise, you will extend the Data Factory to operationalize data scorin
 #### Tasks to complete
 
 -   Create Azure Databricks Linked Service
+-   Add a notebook Activity to Data Factory pipeline. the notebook activity should execute the notebook in **Exercise 5** folder called ***01 Deploy for Batch Scoring**
+-   Trigger the pipeline
 
 #### Exit criteria 
 
--   Exit Criteria 1
+-   you can connect to the Azure Databricks clustere from Azure Data Factory
+-   The notebook Activity has executed succesfully
+
+##### Hints, Tips, and Resources
+
+- if the Azure databricks cluster has terminated due to inactivity you may need to manually start it as an optional task build this step into the pipeline
+- you will need to use the 
 
 
 ## Exercise 6: Summarize data using Azure Databricks
@@ -288,12 +294,16 @@ In this exercise, you will prepare a summary of flight delay data using Spark SQ
 
 
 #### Tasks to complete
--   Create Azure Databricks Linked Service
+
+-   Summarize delays by airport using the notebook in **Exercise 6** folder called **01 Explore Data**
 
 #### Exit criteria 
 
 -   Exit Criteria 1
 
+##### Hints, Tips, and Resources
+
+- TBD
 
 
 ## Exercise 7: Visualizing in Power BI Desktop
@@ -324,9 +334,11 @@ Here is a sample of the finished report:
 ![Sample Completed  Power BI Report](media/pbi-desktop-full-report.png 'Sample Completed  Power BI Report')
 
 ##### Hints, Tips, and Resources
-- Feel Free to experiment with or create alternate visulizations
-- All visualizations should be linked and provide cross filter functionality
 
+-   the Azure Databricks connection should use **direct query** mode
+-   the Azure databricks conenction should use **token** for the user name and the password is the same as the Access token we generated from Azure Data Factory
+-   All visualizations should be linked and provide cross filter functionality
+-   Feel Free to experiment with or create alternate visualizations
 
 ## Exercise 8: Deploy intelligent web app (Optional)
 Duration: 20 minutes
@@ -340,7 +352,7 @@ Follow the instructions here to deploy the app:
 
 https://github.com/Microsoft/MCW-Big-data-analytics-and-visualization/blob/main/Hands-on%20lab/lab-files/BigDataTravel/README.md 
 
-you will need to provide the following values:
+You will need to provide the following values:
 
 - Subscription / Resource Group
 - Region
@@ -349,16 +361,16 @@ you will need to provide the following values:
 
 ### Task 3: Navigate to the web app and verify functionality
 
-try a few different combinations of origin, destination, date, and time in the application. The information you are shown is the result of both the ML API you published, as well as information retrieved from the OpenWeather API.
+Try a few different combinations of origin, destination, date, and time in the application. The information you are shown is the result of both the ML API you published, as well as information retrieved from the OpenWeather API.
 
 
 #### Exit criteria 
 
-    - The web app is deployed and functional
+-   The web app is deployed and functional
 
 ##### Hints, Tips, and Resources
 
-- if the automated deployment from the link fails you may need to download the code and manually deploy from Visual studio
+-   if the automated deployment from the link fails you may need to download the code and manually deploy from Visual studio
 
 ## Conclusion
 Congratulations! You have built and deployed an intelligent system to Azure. We started by deploying resources to azure. we created a data movement pipeline.we then did some data prepartion and created a Machine learning model. while the datasets and model choices will be different for each use case the overall process and tools will be common across solutions and problem domains.
