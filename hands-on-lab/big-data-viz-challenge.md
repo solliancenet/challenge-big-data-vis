@@ -323,9 +323,3 @@ Try a few different combinations of origin, destination, date, and time in the a
 
 ## Conclusion
 Congratulations! You have built and deployed an intelligent system to Azure. We started by deploying resources to azure. we created a data movement pipeline.we then did some data prepartion and created a Machine learning model. while the datasets and model choices will be different for each use case the overall process and tools will be common across solutions and problem domains.
-
-## References
-
-| Description | Links  |
-| ----------- | ------ |
-| TBD | TBD |
