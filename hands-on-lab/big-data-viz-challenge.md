@@ -137,13 +137,17 @@ In this Challenge, you will implement a classification experiment. You will load
 ### Challenge 2 Tasks to complete
 
 1. Task 1: Upload the Sample Datasets
-Download the three CSV sample datasets from here: <http://bit.ly/2wGAqrl> (If you get an error, or the page won't open, try pasting the URL into a new browser window and verify the case sensitive URL is exactly as shown). If you are still having trouble, a zip file called AdventureWorksTravelDatasets.zip is included in the lab-files folders.
+Download the three CSV sample datasets from here: [AdventureWorksTravelDatasets](https://github.com/solliancenet/challenge-big-data-vis/blob/main/hands-on-lab/lab-files/AdventureWorksTravelDatasets.zip)) (If you get an error, or the page won't open, try pasting the URL into a new browser window and verify the case sensitive URL is exactly as shown). If you are still having trouble, a zip file called AdventureWorksTravelDatasets.zip is included in the lab-files folders.
 
 Extract the ZIP and verify you have the following files:
 
    - FlightDelaysWithAirportCodes.csv
    - FlightWeatherWithAirportCode.csv
    - AirportCodeLocationLookupClean.csv
+
+Using the Databricks U/I upload and create external tables for each file
+
+(optional alternate challenge path) access these files from azure storage gen2 account
 
 2. Task 2: Open Azure Databricks and complete lab notebooks
 
