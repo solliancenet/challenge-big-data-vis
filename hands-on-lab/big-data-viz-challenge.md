@@ -179,6 +179,10 @@ Duration: 20 minutes
 
 In this Challenge, you will create a baseline environment for Azure Data Factory development to further operationalize data movement and processing. You will create a Data Factory service and then install the Data Management Gateway, which is the agent that facilitates data movement from on-premises to Microsoft Azure.
 
+Download the AdventureWorks sample data from http://bit.ly/2zi4Sqa. If you are having trouble downloading the file, a zip file called FlightsAndWeather.zip is included in the lab-files folders.
+
+Extract it to a new folder called C:\Data on the VM.
+
 ### Challenge 3 Tasks to complete
 
 - Task 1: Download and stage data to be processed
@@ -200,18 +204,18 @@ In this Challenge, you will create a baseline environment for Azure Data Factory
 
 Duration: 20 minutes
 
-In this Challenge, you will create an Azure Data Factory pipeline to copy data (.CSV files) from an on-premises server (your machine) to Azure Blob Storage. The goal of the Challenge is to demonstrate data movement from an on-premises location to Azure Storage (via the Integration Runtime).
+In this Challenge, you will create an Azure Data Factory pipeline to copy data (.CSV files) from an on-premises server (your VM) to Azure Blob Storage. The goal of the Challenge is to demonstrate data movement from an on-premises location to Azure Storage (via the Integration Runtime).
+
+Create a data pipeline that copies the data from the flights and weather csv dataset to ADLS Gen2 storage. you will want to merge the csv files into a parquest
 
 ### Challenge 4 Tasks to complete
 
--  Copy Flight Delay Data from parquet file to ADLS gen2 storage
--  Copy Airport code data from On-premises SQL server to ADLS gen2 storage  
--  Copy Flights and weather data from On-premises Server to ADLS gen2 Storage
+  -  Copy Flights and weather data from On-premises Server to ADLS gen2 Storage
 
 ### Challenge 4 Success criteria 
 
--   The flight Delay data exists in ADLS Gen2 as a parquet file
--   The airport code data exists in ADLS Gen2 Storage as a parquet file
+- an adf pipeline is cresated that moves the flight and weather data from  **C:\Data** to adls Gen2 storage in the conatiner: **sparkcontainer**
+
 
 ### Challenge 4 Hints, Tips, and Resources
 
@@ -234,11 +238,13 @@ In this Challenge, you will extend the Data Factory to operationalize data scori
 
 -   you can connect to the Azure Databricks cluster from Azure Data Factory
 -   The notebook Activity has executed successfully
+-   the external table **scoredflights** exists
 
 ### Challenge 5 Hints, Tips, and Resources
 
 - if the Azure databricks cluster has terminated due to inactivity you may need to manually start it as an optional task build this step into the pipeline
 - [Azure Databricks Linked Service](https://docs.microsoft.com/en-us/azure/data-factory/compute-linked-services#azure-databricks-linked-service)
+- you will need to ensure that the azure databricks cluster can access the storage account 
 
 
 ## Challenge 6: Summarize data using Azure Databricks
@@ -255,6 +261,7 @@ In this Challenge, you will prepare a summary of flight delay data using Spark S
 ### Challenge 6 success criteria 
 
 -   Notebook has been completed
+-   the external tables **flight_delays_summary** exists (Excercise 6: 01 Explore Data)
 
 ### Challenge 6 Hints, Tips, and Resources
 
