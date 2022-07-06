@@ -115,7 +115,7 @@ Expected configuration:
 
 4. Task 4: Import sample notebooks from: https://github.com/solliancenet/challenge-big-data-vis/blob/main/hands-on-lab/hands-on-lab/lab-files/BigDataVis.dbc?raw=true 
 
-#### Challenge 1 Success criteria 
+### Challenge 1 Success criteria 
 
 -   You have the necessary storage account information
 -   You have a working databricks cluster
@@ -132,7 +132,7 @@ Duration: 60 minutes
 
 In this Challenge, you will implement a classification experiment. You will load the training data from your local machine into a dataset. Then, you will explore the data to identify the primary components you should use for prediction and use two different algorithms for predicting the classification. You will then evaluate the performance of both algorithms and choose the algorithm that performs best. The model selected will be exposed as a web service integrated with the optional sample web app at the end.
 
-#### Challenge 2 Tasks to complete
+### Challenge 2 Tasks to complete
 
 1. Task 1: Upload the Sample Datasets
 Download the three CSV sample datasets from here: <http://bit.ly/2wGAqrl> (If you get an error, or the page won't open, try pasting the URL into a new browser window and verify the case sensitive URL is exactly as shown). If you are still having trouble, a zip file called AdventureWorksTravelDatasets.zip is included in the lab-files folders.
@@ -150,15 +150,20 @@ Extract the ZIP and verify you have the following files:
     -   02 Train and Evaluate Models
     -   03 Deploy as Web Service
 
-#### Challenge 2 Success Criteria
+### Challenge 2 Success Criteria
  -   the following external tables exist
     -   flight_delays_with_airport_codes
     -   airport_code_location_lookup_clean
     -   flight_weather_with_airport_code
 -   You are able to access the tables in Azure Databricks.
-- Data Preparation 
-- train and Evaluate model
-- Deploy Model as Web Service
+- Notebooks have been run:
+  - Data Preparation 
+  - train and Evaluate model
+  - Deploy Model as Web Service
+
+### Challenge 2 Hints, Tips, and Resources
+
+- N/A
 
 ## Challenge 3: Setup Azure Data Factory
 
@@ -178,6 +183,9 @@ In this Challenge, you will create a baseline environment for Azure Data Factory
 -  Azure Data Factory is configured
 -  there is a working Self-hosted integration runtime on the Virtual machine
 
+### Challenge 3 Hints, Tips, and Resources
+- N/A
+
 ## Challenge 4: Develop a data factory pipeline for data movement
 
 Duration: 20 minutes
@@ -195,6 +203,9 @@ In this Challenge, you will create an Azure Data Factory pipeline to copy data (
 -   The flight Delay data exists in ADLS Gen2 as a parquet file
 -   The airport code data exists in ADLS Gen2 Storage as a parquet file
 
+### Challenge 4 Hints, Tips, and Resources
+
+- N/A
 
 ## Challenge 5: Operationalize ML scoring with Azure Databricks and Data Factory
 
@@ -208,12 +219,12 @@ In this Challenge, you will extend the Data Factory to operationalize data scori
 -   Add a notebook Activity to Data Factory pipeline. the notebook activity should execute the notebook in **Challenge 5** folder called ***01 Deploy for Batch Scoring**
 -   Trigger the pipeline
 
-### Challenge 3 success criteria 
+### Challenge 5 Success criteria 
 
 -   you can connect to the Azure Databricks cluster from Azure Data Factory
 -   The notebook Activity has executed successfully
 
-##### Hints, Tips, and Resources
+### Challenge 5 Hints, Tips, and Resources
 
 - if the Azure databricks cluster has terminated due to inactivity you may need to manually start it as an optional task build this step into the pipeline
 
@@ -232,7 +243,7 @@ In this Challenge, you will prepare a summary of flight delay data using Spark S
 
 -   Notebook has been completed
 
-### Challenge 3 Hints, Tips, and Resources
+### Challenge 6 Hints, Tips, and Resources
 
 - N/A
 
