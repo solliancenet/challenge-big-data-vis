@@ -113,7 +113,7 @@ Expected configuration:
    - **Workers**: `1`
 3. Task 3: create and document an access token (for use later)  
 
-4. Task 4: Import sample notebooks from: https://github.com/solliancenet/challenge-big-data-vis/blob/main/hands-on-lab/hands-on-lab/lab-files/BigDataVis.dbc?raw=true 
+4. Task 4: Import sample notebooks from: [BigDataVis.dbc](https://github.com/solliancenet/challenge-big-data-vis/blob/main/hands-on-lab/lab-files/BigDataVis.dbc?raw=true)
 
 ### Challenge 1 Success criteria 
 
