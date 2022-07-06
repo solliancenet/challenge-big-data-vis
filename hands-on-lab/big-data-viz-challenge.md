@@ -125,6 +125,8 @@ Expected configuration:
 ### Challenge 1 Hints, Tips, and Resources
 
 -   this can be done via the portal, Azure CLI ior PowerShell
+-   [Create a cluster](https://docs.microsoft.com/en-us/azure/databricks/clusters/create)
+-   [Authentication using personal access token](https://docs.microsoft.com/en-us/azure/databricks/dev-tools/api/latest/authentication)
 
 ## Challenge 2: Load Sample Data and Databricks Notebooks
 
@@ -163,7 +165,9 @@ Extract the ZIP and verify you have the following files:
 
 ### Challenge 2 Hints, Tips, and Resources
 
-- N/A
+- [Databricks File system DFS](https://docs.microsoft.com/en-us/azure/databricks/data/databricks-file-system)
+- [Use Notebooks](https://docs.microsoft.com/en-us/azure/databricks/notebooks/notebooks-use)
+- [ADLS Gen2](https://docs.microsoft.com/en-us/azure/databricks/data/data-sources/azure/adls-gen2/)
 
 ## Challenge 3: Setup Azure Data Factory
 
@@ -184,7 +188,9 @@ In this Challenge, you will create a baseline environment for Azure Data Factory
 -  there is a working Self-hosted integration runtime on the Virtual machine
 
 ### Challenge 3 Hints, Tips, and Resources
-- N/A
+- [Create self-hosted integration runtime](https://docs.microsoft.com/en-us/azure/data-factory/create-self-hosted-integration-runtime?tabs=data-factory)
+- [Source Control](https://docs.microsoft.com/en-us/azure/data-factory/source-control)
+
 
 ## Challenge 4: Develop a data factory pipeline for data movement
 
@@ -205,7 +211,8 @@ In this Challenge, you will create an Azure Data Factory pipeline to copy data (
 
 ### Challenge 4 Hints, Tips, and Resources
 
-- N/A
+- [Visual Authoring in Azure Data Factory](https://docs.microsoft.com/en-us/azure/data-factory/author-visually?tabs=data-factory)
+- [Iterative development and debugging](https://docs.microsoft.com/en-us/azure/data-factory/iterative-development-debugging?tabs=data-factory)
 
 ## Challenge 5: Operationalize ML scoring with Azure Databricks and Data Factory
 
@@ -227,6 +234,8 @@ In this Challenge, you will extend the Data Factory to operationalize data scori
 ### Challenge 5 Hints, Tips, and Resources
 
 - if the Azure databricks cluster has terminated due to inactivity you may need to manually start it as an optional task build this step into the pipeline
+- [Azure Databricks Linked Service](https://docs.microsoft.com/en-us/azure/data-factory/compute-linked-services#azure-databricks-linked-service)
+
 
 ## Challenge 6: Summarize data using Azure Databricks
 
