@@ -295,7 +295,8 @@ In this Challenge, you will deploy an intelligent web application to Azure from 
 
 Follow the instructions here to deploy the app:
 
-https://github.com/Microsoft/MCW-Big-data-analytics-and-visualization/blob/main/Hands-on%20lab/lab-files/BigDataTravel/README.md 
+[Big Data Travel Deployment Instructions](https://github.com/solliancenet/challenge-big-data-vis/blob/main/hands-on-lab/lab-files/BigDataTravel/README.md)
+
 
 You will need to provide the following values:
 
@@ -305,11 +306,13 @@ You will need to provide the following values:
 - Weather API Key
 
 Try a few different combinations of origin, destination, date, and time in the application. The information you are shown is the result of both the ML API you published, as well as information retrieved from the OpenWeather API.
+
 ### Challenge 8 Tasks to complete
 
 - Task 1: Deploy the WebApp
 - Task 2: Deploy web app from GitHub
 - Task 3: Navigate to the web app and verify functionality
+
 ### Challenge 8 Success criteria 
 
 - The web app is deployed and functional
