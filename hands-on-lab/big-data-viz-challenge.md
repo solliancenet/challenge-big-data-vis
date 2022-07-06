@@ -122,7 +122,7 @@ Expected configuration:
 -   You have an access token
 -   The sample notebooks have been imported
 
-#### Challenge 1 Hints, Tips, and Resources
+### Challenge 1 Hints, Tips, and Resources
 
 -   this can be done via the portal, Azure CLI ior PowerShell
 
@@ -151,11 +151,11 @@ Extract the ZIP and verify you have the following files:
     -   03 Deploy as Web Service
 
 ### Challenge 2 Success Criteria
- -   the following external tables exist
-    -   flight_delays_with_airport_codes
-    -   airport_code_location_lookup_clean
-    -   flight_weather_with_airport_code
--   You are able to access the tables in Azure Databricks.
+ - the following external tables exist
+    - flight_delays_with_airport_codes
+    - airport_code_location_lookup_clean
+    - flight_weather_with_airport_code
+- You are able to access the tables in Azure Databricks.
 - Notebooks have been run:
   - Data Preparation 
   - train and Evaluate model
@@ -216,7 +216,7 @@ In this Challenge, you will extend the Data Factory to operationalize data scori
 ### Challenge 5 Tasks to complete
 
 -   Create Azure Databricks Linked Service
--   Add a notebook Activity to Data Factory pipeline. the notebook activity should execute the notebook in **Challenge 5** folder called ***01 Deploy for Batch Scoring**
+-   Add a notebook Activity to Data Factory pipeline. the notebook activity should execute the notebook in **Challenge 5** folder called **01 Deploy for Batch Scoring**
 -   Trigger the pipeline
 
 ### Challenge 5 Success criteria 
