@@ -228,13 +228,13 @@ In this Challenge, you will prepare a summary of flight delay data using Spark S
 
 -   Summarize delays by airport using the notebook in **Challenge 6** folder called **01 Explore Data**
 
-### Challenge 6 criteria 
+### Challenge 6 success criteria 
 
--   Exit Criteria 1
+-   Notebook has been completed
 
 ### Challenge 3 Hints, Tips, and Resources
 
-- TBD
+- N/A
 
 
 ## Challenge 7: Visualizing in Power BI Desktop
