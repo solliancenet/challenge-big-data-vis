@@ -1,14 +1,7 @@
-<div class="MCWHeader1">
-Big data analytics and visualization
-</div>
+# Big data analytics and visualization
 
-<div class="MCWHeader2">
-Whiteboard design session student guide
-</div>
-
-<div class="MCWHeader3">
-July 2022
-</div>
+## Whiteboard design session student guide (2 hours)
+### July 2022
 
 Information in this document, including URL and other Internet Web site references, is subject to change without notice. Unless otherwise noted, the example companies, organizations, products, domain names, e-mail addresses, logos, people, places, and events depicted herein are fictitious, and no association with any real company, organization, product, domain name, e-mail address, logo, person, place or event is intended or should be inferred. Complying with all applicable copyright laws is the responsibility of the user. Without limiting the rights under copyright, no part of this document may be reproduced, stored in or introduced into a retrieval system, or transmitted in any form or by any means (electronic, mechanical, photocopying, recording, or otherwise), or for any purpose, without the express written permission of Microsoft Corporation.
 
@@ -24,6 +17,9 @@ Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/in
 
 <!-- TOC -->
 
+- [Big data analytics and visualization](#big-data-analytics-and-visualization)
+  - [Whiteboard design session student guide (2 hours)](#whiteboard-design-session-student-guide-2-hours)
+    - [July 2022](#july-2022)
 - [Big data analytics and visualization whiteboard design session student guide](#big-data-analytics-and-visualization-whiteboard-design-session-student-guide)
   - [Abstract and learning objectives](#abstract-and-learning-objectives)
   - [Step 1: Review the customer case study](#step-1-review-the-customer-case-study)
