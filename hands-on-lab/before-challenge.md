@@ -58,7 +58,7 @@ In this task, you will use the Azure Portal to create a new Azure Resource Group
 
 ### Task 2: Deploy Azure resources
 
-The below ARM template deploys several Azure resources for the labs, including Azure Synapse Analytics, Azure Database for PostgreSQL, storage accounts, Event Hubs, Stream Analytics, Key Vault, Azure Cosmos DB, Azure Machine Learning, etc.
+The below ARM template deploys several Azure resources for the labs.
 
 1. Deploy the workspace through the following Azure ARM template (select the button below):
 
