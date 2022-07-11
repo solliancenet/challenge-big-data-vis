@@ -124,7 +124,7 @@ Expected configuration:
 
 ### Challenge 1 Hints, Tips, and Resources
 
--   this can be done via the portal, Azure CLI ior PowerShell
+-   this can be done via the portal, Azure CLI or PowerShell
 -   [Create a cluster](https://docs.microsoft.com/en-us/azure/databricks/clusters/create)
 -   [Authentication using personal access token](https://docs.microsoft.com/en-us/azure/databricks/dev-tools/api/latest/authentication)
 
